@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.openecomp.sdc</groupId>
+    <groupId>org.openecomp.sdc.sdc-titan-cassandra</groupId>
     <artifactId>sdc-titan-cassandra</artifactId>
     <version>1.0.0</version>
 
@@ -403,7 +403,18 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>			
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<nexusUrl>${nexusServer}</nexusUrl>
+					<stagingProfileId>176c31dfe190a</stagingProfileId>
+					<serverId>ecomp-staging</serverId>
+				</configuration>
+			</plugin>
             <!-- ================================================== -->
             <!-- Set the JDK compiler version.                      -->
             <!-- ================================================== -->

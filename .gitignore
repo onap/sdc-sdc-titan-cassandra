@@ -1,3 +1,4 @@
 target/*
 .idea/*
 sdc-titan-cassandra.iml
+/target/

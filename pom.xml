@@ -6,7 +6,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
 
-    <name>SDC Titan-Cassandra: Distributed Graph Database</name>
+    <name>sdc-sdc-titan-cassandra</name>
     <url>http://thinkaurelius.github.com/titan/</url>
     <properties>
         <astyanax.version>3.8.0</astyanax.version>

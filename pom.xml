@@ -26,7 +26,6 @@
         <nexus.snapshot.repository>snapshots</nexus.snapshot.repository>
         <nexus.id.release>ecomp-releases</nexus.id.release>
         <nexus.id.snapshot>ecomp-snapshots</nexus.id.snapshot>
-        <staging.profile.id>176c31dfe190a</staging.profile.id>
 
         <!--tests-->
         <test.skip.ordered>true</test.skip.ordered>
@@ -405,17 +404,6 @@
                     </execution>
                 </executions>
             </plugin>		
-		    <plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<nexusUrl>${nexusServer}</nexusUrl>
-					<stagingProfileId>${staging.profile.id}</stagingProfileId>
-					<serverId>ecomp-staging</serverId>
-				</configuration>
-		    </plugin>
 		    <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
